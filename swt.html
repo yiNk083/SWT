@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landingpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Landingpage</h1>
+            <ul class="nav-links">
+                <li><a href="#info">Informationen</a></li>
+                <li><a href="#order">Bestellung</a></li>
+                <li><a href="#appointment">Beratungstermin</a></li>
+                <li><a href="#admin">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="info" class="info-section">
+            <h2>Informationen</h2>
+            <p>Hier finden Sie alle wichtigen Informationen zu unseren Produkten und Dienstleistungen.</p>
+        </section>
+
+        <section id="order" class="order-section">
+            <h2>Bestellung</h2>
+            <form id="orderForm">
+                <label for="product">Produkt:</label>
+                <select id="product" name="product">
+                    <option value="produkt1">Produkt 1</option>
+                    <option value="produkt2">Produkt 2</option>
+                    <option value="produkt3">Produkt 3</option>
+                </select>
+                <label for="quantity">Menge:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="100">
+                <button type="submit">Bestellen</button>
+            </form>
+        </section>
+
+        <section id="appointment" class="appointment-section">
+            <h2>Beratungstermin buchen</h2>
+            <form id="appointmentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="date">Datum:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Termin buchen</button>
+            </form>
+        </section>
+
+        <section id="admin" class="admin-section">
+            <h2>Admin-Verwaltung</h2>
+            <p>Verwalten Sie hier die Datenbanken und andere administrative Aufgaben.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ihr Unternehmen</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
